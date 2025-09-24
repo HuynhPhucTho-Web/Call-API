@@ -37,7 +37,7 @@ export default function NavBar() {
       {(isDepartments || isEmployees) && (
         <div style={{ marginLeft: 16 }}>
           <select value={status} onChange={onChangeStatus} aria-label="Lọc theo trạng thái">
-            <option value="">-- Tất cả trạng thái --</option>
+            <option value="">All</option>
             <option value="true">Hoạt động</option>
             <option value="false">Ngừng</option>
           </select>
