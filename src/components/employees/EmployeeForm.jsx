@@ -33,7 +33,7 @@ export default function EmployeeForm() {
     e.preventDefault()
     try {
       const payload = { ...form }
-      // If department is only id, backend will bind it to entity via JPA
+
       if (isEdit) await updateEmployee(id, payload)
       else await createEmployee(payload)
       nav('/employees')
@@ -67,10 +67,15 @@ export default function EmployeeForm() {
           </select>
         </div>
         <div>
-          <label>
-            <input type="checkbox" name="status" checked={!!form.status} onChange={onChange} />
-            {' '}Hoạt động
-          </label>
+          <lable className="form-check">
+            <input
+              type="checkbox"
+              name="status"
+              checked={!!form.status}
+              onChange={onChange}
+            />
+            <span>Hoạt động</span>
+            </lable>
         </div>
         <div style={{gridColumn:'1 / -1'}}>
           <button className="btn" type="submit">{isEdit ? 'Cập nhật' : 'Tạo mới'}</button>

@@ -23,7 +23,7 @@
 }
 
 .nav a.active {
-  background: #111;
+  background: #2966e0;
   color: #fff;
 }
 
@@ -44,21 +44,27 @@
 
 .row>* {
   flex: 1;
-  min-width: 160px;
+  min-width: 100px;
 }
 
 .btn {
   padding: 8px 12px;
   border-radius: 10px;
   border: 1px solid #111;
-  background: #111;
+  background: #2966e0;
   color: #fff;
   cursor: pointer;
 }
 
 .btn.light {
-  background: #fff;
+  background: #ffffff;
   color: #111;
+}
+.btn-light-leave{
+  background:#e9adad;
+  color: #111;
+  width: 10px;
+  border: #dc2626;
 }
 
 .table {
@@ -100,13 +106,15 @@ select {
 }
 
 .badge.active {
-  background: #dcfce7;
-  border-color: #16a34a;
+  background: #02c546;
+  border-color: #02c546;
+  color:white
 }
 
 .badge.inactive {
-  background: #fee2e2;
-  border-color: #dc2626;
+  background: #d80505;
+  border-color: #d80505;
+  color:white
 }
 
 .modal-overlay {
@@ -125,4 +133,17 @@ select {
   max-width: 420px;
   width: 92%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+}
+
+.form-check {
+  display: inline-flex;     
+  align-items: center;      
+  gap: 8px;                 
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-check input[type="checkbox"] {
+  margin: 0;                
+  width: 16px; height: 16px; 
 }

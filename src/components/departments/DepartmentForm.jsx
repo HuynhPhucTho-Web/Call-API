@@ -34,19 +34,25 @@ export default function DepartmentForm() {
   return (
     <div className="card">
       <h2>{isEdit ? 'Sửa phòng ban' : 'Thêm phòng ban'}</h2>
-      {error && <p style={{color:'red'}}>Lỗi: {error}</p>}
+      {error && <p style={{ color: 'red' }}>Lỗi: {error}</p>}
       <form onSubmit={onSubmit} className="grid">
         <div>
           <label>Tên phòng ban</label>
           <input name="name" value={form.name || ''} onChange={onChange} placeholder="VD: Nhân sự" required />
         </div>
         <div>
-          <label>
-            <input type="checkbox" name="status" checked={!!form.status} onChange={onChange} />
-            {' '}Hoạt động
+          <label className="form-check">
+            <input
+              type="checkbox"
+              name="status"
+              checked={!!form.status}
+              onChange={onChange}
+            />
+            <span>Hoạt động</span>
           </label>
+
         </div>
-        <div style={{gridColumn:'1 / -1'}}>
+        <div style={{ gridColumn: '1 / -1' }}>
           <button className="btn" type="submit">{isEdit ? 'Cập nhật' : 'Tạo mới'}</button>
         </div>
       </form>
