@@ -1,19 +1,29 @@
-# React + Vite
+# Frontend-Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
+This repository contains the **Frontend Client** built with **React + Vite**.  
+The app connects to the **Backend API** using **axios** and provides routing with **react-router-dom** for navigation between pages.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Tech Stack
+- **React 18+**  
+- **Vite** (build tool)  
+- **Axios** (HTTP client)  
+- **React Router DOM** (routing)  
+- **Tailwind CSS / Bootstrap** (optional styling)  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
+- Fetch data from backend using **axios**.  
+- Page navigation with **react-router-dom**.  
+- Component-based architecture.  
+- Environment-based API URL configuration.  
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
-
-npm i axios
+---
+## Run
+- npm install
+- npm install axios
+- npm run dev
+## 📂 Project Structure
